@@ -1,5 +1,5 @@
 # Serotonin environment types
-Type definitions for the Serotonin's Lua VM
+Type definitions for Serotonin's Lua VM
 
 ## What is this?
 This project provides easy to use type definitions for Serotonin's Lua VM. This project allows for better type checking & thus better productivity when writing scripts inside of Visual Studio Code when using the Luau Language Server. 
