@@ -1,8 +1,4 @@
 type DrawingFont = "ConsolasBold" | "SmallestPixel" | "Verdana" | "Tahoma"
-type FontMeasurement = {
-    width: number,
-    height: number
-}
 
 type MouseButton = "leftmouse" | "rightmouse" | "middlemouse" | "mouse4" | "mouse5" | "VK_LBUTTON" | "VK_RBUTTON" | "VK_MBUTTON" | "VK_XBUTTON1" | "VK_XBUTTON2"
 
@@ -175,7 +171,7 @@ declare class SerotoninDrawing
     Image: (textureId: number, x: number, y: number, w: number, h: number, r: number, g: number, b: number, a: number) -> nil
     Text: (text: string, x: number, y: number, color: Color3, font: DrawingFont?, alpha: number? ) -> nil
     TextOutlined: (text: string, x: number, y: number, color: Color3, font: DrawingFont?, alpha: number? ) -> nil
-    GetTextSize: (text: string, font: DrawingFont) -> FontMeasurement
+    GetTextSize: (text: string, font: DrawingFont) -> (number, number)
     ComputeConvexHull: (points: { number }) -> nil
     Polyline: (points: { number }, color: Color3, closed: boolean, thickness: number, alpha: number?) -> nil
     ConvexPolyFilled: (points: { number }, color: Color3, alpha: number?) -> nil
@@ -192,11 +188,7 @@ declare class SerotoninUtility
     GetDeltaTime: () -> number
     GetMousePos: () -> Vector2
     GetMenuState: () -> boolean
-    WorldToScreen: (worldPos: Vector3) -> {
-        screenX: number,
-        screenY: number,
-        onScreen: boolean
-    }
+    WorldToScreen: (worldPos: Vector3) -> (number, number, boolean)
     LoadImage: (imagePath: string) -> number?
 end
 
