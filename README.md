@@ -1,3 +1,6 @@
+# NOTE
+This repository is kind of useless since Serotonin's lua VM uses LuaJIT and not LuaU (didn't know at the time of making this). It's still usable though but you need to keep that in mind. I'll still continue to update this regardless as I personally use it
+
 # Serotonin environment types
 Type definitions for Serotonin's Lua VM
 
