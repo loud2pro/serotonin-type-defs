@@ -12,7 +12,7 @@ This project provides easy to use type definitions for Serotonin's Lua VM. This 
 - Take the type definitions from [here](https://github.com/loud2pro/serotonin-type-defs/tree/main/types) and configure the Luau Language Server extension to use these types. ([Example](https://github.com/loud2pro/serotonin-type-defs/tree/main/example/))
 
 ## Contributing
-If you find any missing definitions or issues with the definitions, feel free to submit a pull request and/or message me on Discord to let me know ([@videography](https://discord.com/users/1211097252790018104)). These type definitions are based off of the documentation provided [here](https://serotonin-1.gitbook.io/serotonin-docs).
+If you find any missing definitions or issues with the definitions, feel free to submit a pull request and/or message me on Discord to let me know ([@videography](https://discord.com/users/1211097252790018104)). These type definitions are based off of the documentation provided [here](https://serotonin-1.gitbook.io/serotonin-docs). Please note that functions that are purposefully undocumented will not be added.
 
 ## Credit
 - Auti, fope: Making a good external cheat
