@@ -96,7 +96,9 @@ declare class SerotoninHighlight extends SerotoninInstance
 end
 
 declare class SerotoninPart extends SerotoninInstance
-
+    Size: Vector3
+    Position: Vector3
+    Material: string
 end
 
 declare class SerotoninGame extends SerotoninInstance
@@ -206,20 +208,20 @@ declare class SerotoninInputKeyboard
 end
 
 declare class SerotoninUi
-    getValue: (tab_ref: string, container_ref: string, name: string) -> any
-    setValue: (tab_ref: string, container_ref: string, name: string, value: any) -> nil
-    setVisibility: (tab_ref: string, container_ref: string, name: string, visible: boolean) -> nil
-    newTab: (tab_ref: string, name: string) -> nil
-    newContainer: (tab_ref: string, container_ref: string, name: string, options: UiContainerOptions?) -> nil
-    newCheckbox: (tab_ref: string, container_ref: string, name: string, in_line: boolean?) -> nil
-    newSliderInt: (tab_ref: string, container_ref: string, name: string, min: number, max: number, default: number?) -> nil
-    newSliderFloat: (tab_ref: string, container_ref: string, name: string, min: number, max: number, default: number?) -> nil
-    newDropdown: (tab_ref: string, container_ref: string, name: string, options: { string }, default_index: number?) -> nil
-    newMultiselect: (tab_ref: string, container_ref: string, name: string, options: { string }) -> nil
-    newColorpicker: (tab_ref: string, container_ref: string, name: string, default_color: Color3?, in_line: boolean?) -> nil
-    newInputText: (tab_ref: string, container_ref: string, name: string, default_text: string?) -> nil
-    newButton: (tab_ref: string, container_ref: string, name: string, callback: () -> nil) -> nil
-    newListbox: (tab_ref: string, container_ref: string, name: string, options: { string }, callback: () -> nil?) -> nil
+    GetValue: (tab_ref: string, container_ref: string, name: string) -> any
+    SetValue: (tab_ref: string, container_ref: string, name: string, value: any) -> nil
+    SetVisibility: (tab_ref: string, container_ref: string, name: string, visible: boolean) -> nil
+    NewTab: (tab_ref: string, name: string) -> nil
+    NewContainer: (tab_ref: string, container_ref: string, name: string, options: UiContainerOptions?) -> nil
+    NewCheckbox: (tab_ref: string, container_ref: string, name: string, in_line: boolean?) -> nil
+    NewSliderInt: (tab_ref: string, container_ref: string, name: string, min: number, max: number, default: number?) -> nil
+    NewSliderFloat: (tab_ref: string, container_ref: string, name: string, min: number, max: number, default: number?) -> nil
+    NewDropdown: (tab_ref: string, container_ref: string, name: string, options: { string }, default_index: number?) -> nil
+    NewMultiselect: (tab_ref: string, container_ref: string, name: string, options: { string }) -> nil
+    NewColorpicker: (tab_ref: string, container_ref: string, name: string, default_color: Color3?, in_line: boolean?) -> nil
+    NewInputText: (tab_ref: string, container_ref: string, name: string, default_text: string?) -> nil
+    NewButton: (tab_ref: string, container_ref: string, name: string, callback: () -> nil) -> nil
+    NewListbox: (tab_ref: string, container_ref: string, name: string, options: { string }, callback: () -> nil?) -> nil
 end
 
 declare class SerotoninCheat
